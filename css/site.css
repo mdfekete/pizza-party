@@ -1,0 +1,35 @@
+:root {
+    --pizza-red: #ff725a;
+    --pizza-white: #F8F7F3;
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+    background: var(--pizza-white);
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    background: var(--pizza-red);
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
