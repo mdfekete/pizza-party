@@ -16,8 +16,8 @@ html {
 }
 
 .py-6 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
 
 header, footer{
@@ -36,6 +36,10 @@ body {
 .navbar-brand {
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
+}
+
+#masthead{
+    background: url("../images/pizza-triangle.png") no-repeat top scroll;
 }
 
 #neapolitan, #menu, #carousel {
