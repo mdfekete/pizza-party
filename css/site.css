@@ -15,13 +15,22 @@ html {
   }
 }
 
+.py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+header, footer{
+    background: var(--pizza-red);
+}
+
+footer{
+    height:100px;
+}
+
 body {
     background: var(--pizza-white);
     font-family: 'Nunito', sans-serif;
-}
-
-header{
-    background: var(--pizza-red);
 }
 
 .navbar-brand {
@@ -29,7 +38,31 @@ header{
     font-family: 'Pacifico', cursive;
 }
 
-h1,h2,h3,h4,h5,h6{
-
+#neapolitan, #menu, #carousel {
+    background: var(--pizza-red);
 }
 
+#white-menu
+{
+    background: var(--pizza-white);
+}
+
+.carousel-pizza-image{
+    width: 100%;
+    height:300px;
+    background-color: var(--pizza-white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    .carousel-pizza-image{
+        height:500px;
+    }
+  }
+
+.splide__pagination {
+    bottom: 2.5em;
+}

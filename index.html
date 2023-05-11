@@ -7,41 +7,161 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/splide/css/splide.min.css">
     <link rel="stylesheet" href="css/site.css" />
+    
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light box-shadow mb-3 px-5 py-4">
+        <nav class="navbar navbar-light box-shadow mb-3 px-3 px-md-5 py-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">Mario's</a>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            <section id="masthead" class="container py-5">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="display-5 fw-bold text-uppercase">A Slice of Napoli in Cleveland</h1>
-                    </div>
-                </div>
-                <br/>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 col-lg-6 text-center">
-                        <p class="lead">West Park home pizzeria serving up contemporary Neapolitan pizzas inspired by memorable pies across the US</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main">
+        <section id="masthead" class="container py-6">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-5 fw-bold text-uppercase">A Slice of Napoli in Cleveland</h1>
+                </div>
+            </div>
+            <br/>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <p class="lead">West Park home pizzeria serving up contemporary Neapolitan pizzas inspired by memorable pies across the US</p>
+                </div>
+            </div>
+        </section>
+        <section id="neapolitan" class="py-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold text-uppercase">Contemporary Neapolitan Pizza</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <p>12", thin base, puffy crust and wood-fired for 90 seconds at 800&deg;F. Soft and crunchy at the same time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="pb-5">
+            <div class="row gx-0">
+                <div id="red-menu" class="col-12 col-md-6 py-4">
+                    <div class="container">
+                        <div class="row justify-content-md-end">
+                            <div class="col-12 col-md-9 me-md-3">
+                                <div class="border-bottom border-black">
+                                    <h3 class="fw-bold mb-1">Red Pizza</h4>
+                                    <p>San Marzano tomato sauce base</p>
+                                </div>
+                                <br>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Margherita</span>$0</h5>
+                                    <p>Fresh Mozzarella, Cherry Tomato, Basil, EVOO</p>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Pepperoni</span>$0</h5>
+                                    <p>Fresh Mozzarella, Pepperoni, Hot Honey</p>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Little Italy</span>$0</h5>
+                                    <p>
+                                        Fresh Mozzarella, Italian Sausage, Roasted Red Peppers, Red Onion, Basil, Oregano
+                                        <br/>
+                                        <span class="small fst-italic">Inspired by Citizen Pie - Cleveland OH</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="white-menu" class="col-12 col-md-6 py-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9 ms-md-3">
+                                <div class="border-bottom border-black">
+                                    <h3 class="fw-bold mb-1">White Pizza</h4>
+                                    <p>Extra virgin olive oil base</p>
+                                </div>
+                                <br>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Leonardo</span>$0</h5>
+                                    <p>
+                                        Fresh Mozzarella, Cherry Tomato, Pistachio, Arugula, EVOO
+                                        <br/>
+                                        <span class="small fst-italic">Inspired by Harlow's - Lakewood, OH</span>
+                                    </p>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Rosa</span>$0</h5>
+                                    <p>
+                                        Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO
+                                        <br/>
+                                        <span class="small fst-italic">Inspired by Pizzeria Bianco - Phoenix, AZ</span>
+                                    </p>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Pinto</span>$0</h5>
+                                    <p>
+                                        Fresh Mozzarella, Basil, Garlic, Pine Nuts, Ricotta
+                                        <br/>
+                                        <span class="small fst-italic">Inspired by Posto - Boston, MA</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="carousel" class="py-5">
+            <div class="container">
+                  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <div class="carousel-pizza-image" style="background-image:url(https://cdn.shopify.com/s/files/1/0205/9582/articles/20220211142347-margherita-9920_ba86be55-674e-4f35-8094-2067ab41a671.jpg);"></div>
+                                  <div class="lead">
+                                      Margherita
+                                  </div>
+                              </li>
+                  
+                              <li class="splide__slide">
+                                  <div class="carousel-pizza-image" style="background-image:url(https://preview.redd.it/pepperoni-hot-honey-neapolitan-pizza-v0-deh2ubxl6ava1.jpg?width=640&crop=smart&auto=webp&s=cd539d69a9c7b9517c29401f13c261a9c091de0b);"></div>
+                                  <div class="lead">
+                                      Pepperoni
+                                  </div>
+                              </li>
+                          </ul>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            &copy; 2023 - Testing
         </div>
     </footer>
     <script src="lib/jquery/jquery.slim.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/splide/js/splide.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            new Splide( '#image-carousel', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                pauseOnHover: true,
+                interval: 5000,
+            } ).mount();
+        })
+    </script>
 </body>
 </html>
