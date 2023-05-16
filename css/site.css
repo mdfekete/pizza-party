@@ -33,6 +33,11 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+h3{
+    font-size: 1.75rem!important;
+}
+
+
 .navbar-brand {
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
@@ -49,6 +54,16 @@ body {
 #white-menu
 {
     background: var(--pizza-white);
+}
+
+#order-modal-button, #order-button, #order-close{
+    border-radius: 0;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,.175)!important;
+}
+
+#order-modal .modal-content{
+    background-color: var(--pizza-white);
+    border-radius: 0.25rem;
 }
 
 .carousel-pizza-image{

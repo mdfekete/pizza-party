@@ -4,12 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Party!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/splide/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/site.css" />
     
 </head>
@@ -36,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <section id="neapolitan" class="py-5">
+        <section id="neapolitan" class="pt-5 pb-5">
             <div class="container">
                 <div class="row ">
                     <div class="col-12 text-center">
@@ -48,11 +55,16 @@
                         <p>12", thin base, puffy crust and wood-fired for 90 seconds at 800&deg;F. Soft and crunchy at the same time.</p>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <button id="order-modal-button" class="btn btn-lg btn-dark px-5 py-3">ORDER NOW</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="menu" class="pb-5">
             <div class="row gx-0">
-                <div id="red-menu" class="col-12 col-md-6 py-4">
+                <div id="red-menu" class="col-12 col-md-6 py-2 py-md-4">
                     <div class="container">
                         <div class="row justify-content-md-end">
                             <div class="col-12 col-md-9 me-md-3">
@@ -143,15 +155,86 @@
                   </div>
             </div>
         </section>
+
+        <div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Place Your Order</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="order-name" placeholder="John Doe" />
+                        <label for="order-name">Your Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="order-pizza">
+                            <optgroup label="Red Pizza">
+                                <option value="Margherita">Margherita</option>
+                                <option value="Pepperoni">Pepperoni</option>
+                                <option value="Little Italy">Little Italy</option>
+                            </optgroup>
+                            <optgroup label="White Pizza">
+                                <option value="Leonardo">Leonardo</option>
+                                <option value="Rosa">Rosa</option>
+                                <option value="Pinto">Pinto</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                                <option value="Custom">Make Your Own! *</option>
+                            </optgroup>
+                        </select>
+                        <label for="order-pizza">Your Pizza</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="order-quantity">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <label for="order-quantity">Quantity</label>
+                    </div>
+                    <div class="toppings-section form-floating mb-3 d-none">
+                        <textarea class="form-control" id="order-toppings" placeholder="Leave notes here"></textarea>
+                        <label for="order-toppings">Toppings</label>
+                        <small class="ms-2 fst-italic text-secondary">* Please list the toppings you'll be bringing</small>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="order-notes" placeholder="Leave notes here"></textarea>
+                        <label for="order-notes">Notes / Additional Details</label>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div class="status d-flex">
+                        <div class="status-spinner spinner-border text-secondary d-none" style="border-width:0.15rem" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="status-success text-success d-flex align-items-center d-none">
+                            <i class="bi bi-check-circle" style="font-size: 2rem;"></i>
+                            <span class="lead ms-2">Order received!</span>
+                        </div>
+                        <div class="status-fail text-danger d-flex align-items-center d-none">
+                            <i class="bi bi-x-circle" style="font-size: 2rem;"></i>
+                            <span class="lead ms-2">Error occurred</span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="order-close" type="button" class="btn btn-dark px-3 py-2 d-none" data-bs-dismiss="modal">CLOSE</button>
+                        <button id="order-button" type="button" class="btn btn-dark px-3 py-2">SUBMIT ORDER</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-        </div>
     </footer>
-    <script src="lib/jquery/jquery.slim.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/splide/js/splide.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="lib/splide/js/splide.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
     <script>
         $(document).ready(function(){
             new Splide( '#image-carousel', {
@@ -161,6 +244,60 @@
                 pauseOnHover: true,
                 interval: 5000,
             } ).mount();
+
+            $("#order-modal-button").click(function(){
+                $("#order-name").val("");
+                $("#order-pizza").prop('selectedIndex', 0);
+                $("#order-quantity").prop('selectedIndex', 0);
+                $(".toppings-section").addClass("d-none");
+                $("#order-toppings").val("");
+                $("#order-notes").val("");
+
+                $(".status-spinner, .status-success, .status-fail").addClass("d-none");
+
+                $("#order-button").removeClass("d-none");
+                $("#order-button").prop("disabled", false);
+                $("#order-close").addClass("d-none");
+
+                $("#order-modal").modal("show");
+            });
+
+            $("#order-pizza").change(function(){
+                if($(this).val() == "Custom"){
+                    $(".toppings-section").removeClass("d-none");
+                } else {
+                    $(".toppings-section").addClass("d-none");
+                }
+            });
+
+            $("#order-name").change(function(){
+                $(this).removeClass("is-invalid");
+            });
+
+            $("#order-button").click(function(){
+                if($("#order-name").val() == ""){
+                    $("#order-name").addClass("is-invalid");
+                    return;
+                }
+
+                let button = $(this);
+                
+                button.prop("disabled", true);
+
+                $(".status-spinner").removeClass("d-none");
+                $(".status-success").addClass("d-none");
+                $(".status-fail").addClass("d-none");
+
+                var templateParams = {
+                    from_name: $("#order-name").val(),
+                    pizza: $("#order-pizza").val(),
+                    quantity: $("#order-quantity").val(),
+                    toppings: $("#order-toppings").val(),
+                    notes: $("#order-notes").val()
+                };
+
+                sendEmail(templateParams);
+            });
         })
     </script>
 </body>
