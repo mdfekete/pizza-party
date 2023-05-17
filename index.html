@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,6 +89,12 @@
                                         <span class="small fst-italic">Inspired by Citizen Pie - Cleveland OH</span>
                                     </p>
                                 </div>
+                                <div class="pt-2">
+                                    <h5 class="fw-bold mb-0 text-uppercase"><span class="me-4">Parma</span>$0</h5>
+                                    <p>
+                                        Fresh Mozzarella, Prosciutto, Arugula, Shaved Parmesan, Balsamic Glaze
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,21 +140,50 @@
         </section>
         <section id="carousel" class="py-5">
             <div class="container">
-                  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                  <section id="image-carousel" class="splide" aria-label="Pizza Images">
                     <div class="splide__track">
                           <ul class="splide__list">
                               <li class="splide__slide">
-                                  <div class="carousel-pizza-image" style="background-image:url(https://cdn.shopify.com/s/files/1/0205/9582/articles/20220211142347-margherita-9920_ba86be55-674e-4f35-8094-2067ab41a671.jpg);"></div>
+                                  <div class="carousel-pizza-image" style="background-image:url(images/pizzas/margherita.jpg);"></div>
                                   <div class="lead">
                                       Margherita
                                   </div>
                               </li>
-                  
                               <li class="splide__slide">
-                                  <div class="carousel-pizza-image" style="background-image:url(https://preview.redd.it/pepperoni-hot-honey-neapolitan-pizza-v0-deh2ubxl6ava1.jpg?width=640&crop=smart&auto=webp&s=cd539d69a9c7b9517c29401f13c261a9c091de0b);"></div>
+                                  <div class="carousel-pizza-image" style="background-image:url(images/pizzas/pepperoni.jpg);"></div>
                                   <div class="lead">
                                       Pepperoni
                                   </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="carousel-pizza-image" style="background-image:url(images/pizzas/littleitaly.jpg);"></div>
+                                <div class="lead">
+                                    Little Italy
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="carousel-pizza-image" style="background-image:url(images/pizzas/parma.jpg);"></div>
+                                <div class="lead">
+                                    Parma
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="carousel-pizza-image" style="background-image:url(images/pizzas/leo.jpg);"></div>
+                                <div class="lead">
+                                    Leonardo
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="carousel-pizza-image" style="background-image:url(images/pizzas/rosa.jpg);"></div>
+                                <div class="lead">
+                                    Rosa
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class="carousel-pizza-image" style="background-image:url(images/pizzas/pinto.jpg);"></div>
+                                <div class="lead">
+                                    Pinto
+                                </div>
                               </li>
                           </ul>
                     </div>
@@ -174,6 +209,7 @@
                                 <option value="Margherita">Margherita</option>
                                 <option value="Pepperoni">Pepperoni</option>
                                 <option value="Little Italy">Little Italy</option>
+                                <option value="Parma">Parma</option>
                             </optgroup>
                             <optgroup label="White Pizza">
                                 <option value="Leonardo">Leonardo</option>
@@ -239,10 +275,15 @@
         $(document).ready(function(){
             new Splide( '#image-carousel', {
                 type: 'loop',
-                perPage: 1,
+                perPage: 2,
                 autoplay: true,
                 pauseOnHover: true,
                 interval: 5000,
+                breakpoints: {
+                    768: {
+                        perPage: 1,
+                    },
+                }
             } ).mount();
 
             $("#order-modal-button").click(function(){
