@@ -1,5 +1,5 @@
 let pubkey = "WUNjVUpVMHNsX01tRUVTZVM=";
-let serviceId = "c2VydmljZV80bm8xajF3";
+let serviceId = "c2VydmljZV8zYnV3bHU4";
 let templateId = "dGVtcGxhdGVfdjd3ajN0dw==";
 
 emailjs.init(atob(pubkey));
