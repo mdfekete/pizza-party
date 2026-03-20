@@ -26,6 +26,7 @@
         <nav class="navbar navbar-light box-shadow mb-3 px-3 px-md-5 py-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">Mario's</a>
+                <button id="order-modal-button-nav" class="btn btn-dark px-3 py-2">ORDER NOW</button>
             </div>
         </nav>
     </header>
@@ -287,6 +288,10 @@
                     },
                 }
             } ).mount();
+
+            $("#order-modal-button-nav").click(function(){
+                $("#order-modal-button").click();
+            });
 
             $("#order-modal-button").click(function(){
                 $("#order-name").val("");
