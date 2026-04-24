@@ -9,12 +9,12 @@ function sendEmail(templateParams) {
         .then(function(response) {
             $(".status-spinner").addClass("d-none");
             $(".status-success").removeClass("d-none");
-            $("#order-button").addClass("d-none");
-            $("#order-close").removeClass("d-none");
+            $("#rsvp-button").addClass("d-none");
+            $("#rsvp-close").removeClass("d-none");
         }, function(error) {
             console.log(error);
             $(".status-spinner").addClass("d-none");
             $(".status-fail").removeClass("d-none");
-            $("#order-button").prop("disabled", false);
+            $("#rsvp-button").prop("disabled", false);
         });
 }
