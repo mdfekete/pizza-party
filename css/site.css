@@ -47,23 +47,84 @@ h3{
     background: url("../images/pizza-triangle.png") no-repeat top scroll;
 }
 
-#neapolitan, #menu, #carousel {
+#schedule, #carousel {
     background: var(--pizza-red);
 }
 
-#white-menu
-{
-    background: var(--pizza-white);
-}
-
-#order-modal-button, #order-button, #order-close{
-    border-radius: 0;
+#rsvp-button, #rsvp-close, .rsvp-btn {
     box-shadow: 0 .25rem .5rem rgba(0,0,0,.175)!important;
 }
 
-#order-modal .modal-content{
+#rsvp-modal .modal-content {
     background-color: var(--pizza-white);
     border-radius: 0.25rem;
+}
+
+.next-party-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--pizza-white);
+}
+
+.party-card {
+    background: var(--pizza-white);
+    padding: 2rem;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,.175);
+}
+
+.next-party-card .party-card-date {
+    font-family: 'Allura', cursive;
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.party-card-time {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.upcoming-date {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.section-heading {
+    color: var(--pizza-white);
+}
+
+.badge-red-pizza {
+    background-color: var(--pizza-red);
+    color: white;
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+.badge-white-pizza {
+    background-color: var(--pizza-white);
+    color: #333;
+    border: 1px solid #555;
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+.past-parties-accordion .accordion-button {
+    background-color: var(--pizza-white);
+}
+
+.past-parties-accordion .accordion-button:not(.collapsed) {
+    background-color: #f0ece5;
+    color: inherit;
+    box-shadow: none;
+}
+
+.past-parties-accordion .accordion-body {
+    background-color: var(--pizza-white);
 }
 
 .carousel-pizza-image{

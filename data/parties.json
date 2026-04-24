@@ -1,0 +1,41 @@
+{
+  "parties": [
+    {
+      "date": "2026-06-05",
+      "time": "6:30 pm",
+      "menu": [
+        { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" },
+        { "name": "Pepperoni", "type": "Red", "description": "Fresh Mozzarella, Pepperoni, Hot Honey" },
+        { "name": "Leonardo", "type": "White", "description": "Fresh Mozzarella, Cherry Tomato, Pistachio, Arugula, EVOO" }
+      ],
+      "notes": ""
+    },
+    {
+      "date": "2026-07-03",
+      "menu": [
+        { "name": "Little Italy", "type": "Red", "description": "Fresh Mozzarella, Italian Sausage, Roasted Red Peppers, Red Onion, Basil, Oregano" },
+        { "name": "Parma", "type": "Red", "description": "Fresh Mozzarella, Prosciutto, Arugula, Shaved Parmesan, Balsamic Glaze" },
+        { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" }
+      ],
+      "notes": ""
+    },
+    {
+      "date": "2026-08-07",
+      "menu": [
+        { "name": "Pepperoni", "type": "Red", "description": "Fresh Mozzarella, Pepperoni, Hot Honey" },
+        { "name": "Pinto", "type": "White", "description": "Fresh Mozzarella, Basil, Garlic, Pine Nuts, Ricotta" },
+        { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" }
+      ],
+      "notes": ""
+    },
+    {
+      "date": "2026-09-04",
+      "menu": [
+        { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" },
+        { "name": "Little Italy", "type": "Red", "description": "Fresh Mozzarella, Italian Sausage, Roasted Red Peppers, Red Onion, Basil, Oregano" },
+        { "name": "Leonardo", "type": "White", "description": "Fresh Mozzarella, Cherry Tomato, Pistachio, Arugula, EVOO" }
+      ],
+      "notes": ""
+    }
+  ]
+}
