@@ -88,8 +88,11 @@ h3{
 .party-card-time {
     text-align: center;
     font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: #555;
-    margin-top: 0.25rem;
+    margin-top: 0.4rem;
 }
 
 .upcoming-date {
