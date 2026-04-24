@@ -31,6 +31,40 @@ function renderMenuItems(menu) {
     }).join('');
 }
 
+function renderPizzaSection(pizza) {
+    return '<div class="border-bottom border-black mb-2 mt-4">' +
+        '<h6 class="fw-bold text-uppercase mb-1">Pizza</h6>' +
+        '</div>' +
+        renderMenuItems(pizza);
+}
+
+function renderSaladSection(salad) {
+    if (!salad) return '';
+    return '<div class="border-bottom border-black mb-2 mt-5">' +
+        '<h6 class="fw-bold text-uppercase mb-1">Salad</h6>' +
+        '</div>' +
+        '<div class="menu-item">' +
+        '<h5 class="fw-bold mb-0 text-uppercase">' + salad.name + '</h5>' +
+        '<p class="mb-0">' + salad.description + '</p>' +
+        '</div>';
+}
+
+function renderBeerSection(beer) {
+    if (!beer) return '';
+    return '<div class="border-bottom border-black mb-2 mt-5">' +
+        '<h6 class="fw-bold text-uppercase mb-1">Beer</h6>' +
+        '</div>' +
+        '<div class="menu-item mb-2">' +
+        '<h5 class="fw-bold mb-0 text-uppercase">' + beer.light + '</h5>' +
+        '</div>' +
+        '<div class="menu-item">' +
+        '<h5 class="fw-bold mb-0 text-uppercase">' +
+        '<span class="me-2">' + beer.homebrew + '</span>' +
+        '<span class="badge badge-homebrew">Homebrew</span>' +
+        '</h5>' +
+        '</div>';
+}
+
 function rsvpButton(date, displayDate) {
     return '<div class="text-center mt-4">' +
         '<button class="btn btn-dark rsvp-btn px-4 py-2" data-date="' + date + '" data-display-date="' + displayDate + '">RSVP</button>' +
@@ -48,9 +82,8 @@ function renderNextParty(party) {
         '<div class="party-card next-party-card">' +
         '<div class="party-card-date">' + displayDate + '</div>' +
         (party.time ? '<div class="party-card-time">' + party.time + '</div>' : '') +
-        '<hr class="my-3">' +
-        '<div class="party-card-menu">' + renderMenuItems(party.menu) + '</div>' +
-        (party.notes ? '<p class="fst-italic text-secondary mt-2">' + party.notes + '</p>' : '') +
+        renderPizzaSection(party.pizza) + renderSaladSection(party.salad) + renderBeerSection(party.beer) +
+        (party.notes ? '<p class="fst-italic text-secondary mt-3">' + party.notes + '</p>' : '') +
         rsvpButton(party.date, displayDate) +
         '</div>' +
         '</div>' +
@@ -65,9 +98,8 @@ function renderUpcomingParties(parties) {
         return '<div class="col-12 col-md-6">' +
             '<div class="party-card upcoming-party-card h-100">' +
             '<div class="party-card-date upcoming-date">' + displayDate + '</div>' +
-            '<hr class="my-3">' +
-            '<div class="party-card-menu">' + renderMenuItems(party.menu) + '</div>' +
-            (party.notes ? '<p class="fst-italic text-secondary mt-2">' + party.notes + '</p>' : '') +
+            renderPizzaSection(party.pizza) + renderSaladSection(party.salad) + renderBeerSection(party.beer) +
+            (party.notes ? '<p class="fst-italic text-secondary mt-3">' + party.notes + '</p>' : '') +
             '</div>' +
             '</div>';
     }).join('');
@@ -92,8 +124,8 @@ function renderPastParties(parties) {
             '</h2>' +
             '<div id="' + id + '" class="accordion-collapse collapse">' +
             '<div class="accordion-body">' +
-            renderMenuItems(party.menu) +
-            (party.notes ? '<p class="fst-italic text-secondary mt-2">' + party.notes + '</p>' : '') +
+            renderPizzaSection(party.pizza) + renderSaladSection(party.salad) + renderBeerSection(party.beer) +
+            (party.notes ? '<p class="fst-italic text-secondary mt-3">' + party.notes + '</p>' : '') +
             '</div>' +
             '</div>' +
             '</div>';
