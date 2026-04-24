@@ -1,0 +1,87 @@
+{
+  "parties": [
+    {
+      "date": "2026-05-15",
+      "time": "6:30 pm",
+      "pizza": [
+        { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" },
+        { "name": "Chorizo", "type": "Red", "description": "Chorizo, Jalapeño, Pickled Red Onion, Cotija" },
+        { "name": "Leonardo", "type": "White", "description": "Fresh Mozzarella, Cherry Tomato, Pistachio, Arugula, EVOO" }
+      ],
+      "salad": {
+        "name": "Pesto Orzo Salad",
+        "description": "Arugula, Chickpeas, Orzo, Pesto, Feta"
+      },
+      "beer": {
+        "light": "Modelo Especial",
+        "homebrew": "Mexican Dark Lager"
+      },
+      "notes": ""
+    },
+    {
+      "date": "2026-06-12",
+      "time": "6:30 pm",
+      "pizza": [
+        { "name": "Marinara", "type": "Red", "description": "Red Sauce, Garlic, Oregano, EVOO" },
+        { "name": "Pepperoni", "type": "Red", "description": "Fresh Mozzarella, Pepperoni, Hot Honey" },
+        { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" }
+      ],
+      "salad": {
+        "name": "TBD",
+        "description": "TBD"
+      },
+      "beer": {
+        "light": "Miller High Life",
+        "homebrew": "American IPA"
+      },
+      "notes": ""
+    },
+    {
+      "date": "2026-07-24",
+      "pizza": [
+        { "name": "Little Italy", "type": "Red", "description": "Fresh Mozzarella, Italian Sausage, Roasted Red Peppers, Red Onion, Basil, Oregano" },
+        { "name": "Pesto", "type": "White", "description": "TBD" },
+        { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" }
+      ],
+      "salad": {
+        "name": "TBD",
+        "description": "TBD"
+      },
+      "beer": {
+        "light": "TBD",
+        "homebrew": "TBD"
+      },
+      "notes": ""
+    },
+    {
+      "date": "2026-08-21",
+      "pizza": [
+        { "name": "TBD", "type": "Red", "description": "TBD" }
+      ],
+      "salad": {
+        "name": "TBD",
+        "description": "TBD"
+      },
+      "beer": {
+        "light": "TBD",
+        "homebrew": "TBD"
+      },
+      "notes": ""
+    },
+    {
+      "date": "2026-09-18",
+      "pizza": [
+        { "name": "TBD", "type": "Red", "description": "TBD" }
+      ],
+      "salad": {
+        "name": "TBD",
+        "description": "TBD"
+      },
+      "beer": {
+        "light": "TBD",
+        "homebrew": "TBD"
+      },
+      "notes": ""
+    }
+  ]
+}
