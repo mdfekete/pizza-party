@@ -114,6 +114,16 @@ h3{
     margin-top: 0.4rem;
 }
 
+.party-card-time a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.party-card-time a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
 .upcoming-date {
     font-weight: bold;
     font-size: 1.1rem;

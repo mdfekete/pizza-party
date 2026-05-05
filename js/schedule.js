@@ -82,6 +82,7 @@ function renderNextParty(party) {
         '<div class="party-card next-party-card">' +
         '<div class="party-card-date">' + displayDate + '</div>' +
         (party.time ? '<div class="party-card-time">' + party.time + '</div>' : '') +
+        '<div class="party-card-time"><a href="https://www.google.com/maps/search/?api=1&query=3523+W+146+ST+CLEVELAND+OH+44111" target="_blank" rel="noopener">3523 W 146 ST, CLEVELAND, OH</a></div>' +
         renderPizzaSection(party.pizza) + renderSaladSection(party.salad) + renderBeerSection(party.beer) +
         (party.notes ? '<p class="fst-italic text-secondary mt-3">' + party.notes + '</p>' : '') +
         rsvpButton(party.date, displayDate) +
