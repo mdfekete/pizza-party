@@ -14,7 +14,7 @@
       },
       "beer": {
         "light": "Modelo Especial",
-        "homebrew": "Mexican Dark Lager"
+        "homebrew": ["Mexican Dark Lager"]
       },
       "notes": ""
     },
@@ -27,12 +27,12 @@
         { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" }
       ],
       "salad": {
-        "name": "TBD",
-        "description": "TBD"
+        "name": "Kale Caesar Pasta Salad",
+        "description": "Kale, Chickpeas, Parmigiano Reggiano, Caesar Dressing"
       },
       "beer": {
         "light": "Miller High Life",
-        "homebrew": "American IPA"
+        "homebrew": ["West Coast IPA", "Black IPA"]
       },
       "notes": ""
     },
@@ -49,7 +49,7 @@
       },
       "beer": {
         "light": "TBD",
-        "homebrew": "TBD"
+        "homebrew": ["TBD"]
       },
       "notes": ""
     },
@@ -64,7 +64,7 @@
       },
       "beer": {
         "light": "TBD",
-        "homebrew": "TBD"
+        "homebrew": ["TBD"]
       },
       "notes": ""
     },
@@ -79,7 +79,7 @@
       },
       "beer": {
         "light": "TBD",
-        "homebrew": "TBD"
+        "homebrew": ["TBD"]
       },
       "notes": ""
     }

@@ -57,12 +57,14 @@ function renderBeerSection(beer) {
         '<div class="menu-item mb-2">' +
         '<h5 class="fw-bold mb-0 text-uppercase">' + beer.light + '</h5>' +
         '</div>' +
-        '<div class="menu-item">' +
-        '<h5 class="fw-bold mb-0 text-uppercase">' +
-        '<span class="me-2">' + beer.homebrew + '</span>' +
-        '<span class="badge badge-homebrew">Homebrew</span>' +
-        '</h5>' +
-        '</div>';
+        beer.homebrew.map(function (brew) {
+            return '<div class="menu-item">' +
+                '<h5 class="fw-bold mb-0 text-uppercase">' +
+                '<span class="me-2">' + brew + '</span>' +
+                '<span class="badge badge-homebrew">Homebrew</span>' +
+                '</h5>' +
+                '</div>';
+        }).join('');
 }
 
 function rsvpButton(date, displayDate) {
