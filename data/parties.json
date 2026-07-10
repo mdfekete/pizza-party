@@ -40,7 +40,7 @@
       "date": "2026-07-24",
       "pizza": [
         { "name": "Little Italy", "type": "Red", "description": "Fresh Mozzarella, Italian Sausage, Roasted Red Peppers, Red Onion, Basil, Oregano" },
-        { "name": "Pesto", "type": "White", "description": "TBD" },
+        { "name": "Pesto", "type": "White", "description": "Almond Pesto, Fresh Mozzarella, Gorgonzola, Egg Yolk, Crushed Almonds" },
         { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" }
       ],
       "salad": {
@@ -49,7 +49,7 @@
       },
       "beer": {
         "light": "TBD",
-        "homebrew": ["TBD"]
+        "homebrew": ["Italian Pilsner"]
       },
       "notes": ""
     },
