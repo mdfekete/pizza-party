@@ -44,11 +44,11 @@
         { "name": "Margherita", "type": "Red", "description": "Fresh Mozzarella, Cherry Tomato, Basil, EVOO" }
       ],
       "salad": {
-        "name": "TBD",
-        "description": "TBD"
+        "name": "Bruschetta Pasta Salad",
+        "description": "Cherry Tomatoes, Mozarella Pearls, Basil, Oil & Vinegar"
       },
       "beer": {
-        "light": "TBD",
+        "light": "Menabrea",
         "homebrew": ["Italian Pilsner"]
       },
       "notes": ""
