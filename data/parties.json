@@ -56,15 +56,17 @@
     {
       "date": "2026-08-21",
       "pizza": [
-        { "name": "TBD", "type": "Red", "description": "TBD" }
+        { "name": "Pepperoni", "type": "Red", "description": "Fresh Mozzarella, Pepperoni, Hot Honey" },
+        { "name": "Shakshuka", "type": "Red", "description": "Tomato & Red Pepper Sauce, Spices, Egg, Feta" },
+        { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" }
       ],
       "salad": {
         "name": "TBD",
         "description": "TBD"
       },
       "beer": {
-        "light": "TBD",
-        "homebrew": ["TBD"]
+        "light": "Assortment",
+        "homebrew": ["Italian Pilsner", "Munich Dunkel"]
       },
       "notes": ""
     },
