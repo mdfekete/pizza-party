@@ -65,7 +65,7 @@
         "description": "TBD"
       },
       "beer": {
-        "light": "Assortment",
+        "light": "Commercial Beer Assortment",
         "homebrew": ["Italian Pilsner", "Munich Dunkel"]
       },
       "notes": ""
