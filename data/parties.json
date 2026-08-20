@@ -61,8 +61,8 @@
         { "name": "Rosa", "type": "White", "description": "Parmigiano Reggiano, Red Onion, Rosemary, Pistachio, EVOO" }
       ],
       "salad": {
-        "name": "TBD",
-        "description": "TBD"
+        "name": "Summer Orzo Pasta Salad",
+        "description": "Orzo, Veggies, Parmigiano Reggiano, Lemmon Vinaigrette"
       },
       "beer": {
         "light": "Commercial Beer Assortment",
