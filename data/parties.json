@@ -66,7 +66,7 @@
       },
       "beer": {
         "light": "Commercial Beer Assortment",
-        "homebrew": ["Italian Pilsner", "Munich Dunkel"]
+        "homebrew": ["Italian Pils", "Munich Dunkel"]
       },
       "notes": ""
     },
